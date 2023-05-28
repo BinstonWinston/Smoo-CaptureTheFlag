@@ -1,0 +1,15 @@
+mod/starlight_patch_100/**
+mod/build100/**
+mod/romfs stuff/**
+mod/.vscode/**
+mod/Crash Reports/**
+mod/.cache/**
+mod/Custom Stage Builds/**
+*.lst
+*.disabled
+
+mod/compile_commands.json
+
+server/data/**
+
+TODO.md
