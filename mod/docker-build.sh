@@ -1,6 +1,8 @@
 #!/bin/bash
 
-ISEMU=${1:-0}
+ISEMU=${ISEMU:-0}
+
+echo "Emulator enabled? ISEMU='$ISEMU'"
 
 export DOCKER_BUILDKIT=1
 docker  build  .  -t smoo-client-build
@@ -9,6 +11,7 @@ docker  run  --rm       \
   -v "/$PWD/":/app/     \
   -e ISEMU=${ISEMU}     \
   smoo-client-build     \
+  $@ \
 ;
 # docker  rmi  smoo-client-build
 

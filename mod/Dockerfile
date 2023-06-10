@@ -10,4 +10,4 @@ RUN   apt-get  update       \
 
 WORKDIR  /app/
 
-ENTRYPOINT  make -j -l send
+CMD  ["make", "-j", "-l"]
